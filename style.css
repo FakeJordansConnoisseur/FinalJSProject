@@ -1,0 +1,79 @@
+body {
+    text-align: center;
+    background-color: #588157;
+    color: #dad7cd;
+}
+h1 {
+    padding: 50px;
+    background-color: #344e41;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+h3 {
+    text-align: center;
+    font-size: 40px;
+}
+h4 {
+    font-size: 15px;
+}
+
+button {
+    background-color: #7bcf78;
+    border-radius: 100px;
+    display: inline-block;
+    color: #02353c;
+    font-size: 18px;
+    box-shadow: 5px 5px 5px #6abe67;
+    padding: 5px 10px;
+}
+/*Styles the grid of the game*/
+.grid{
+    display:grid;
+    grid-template-columns: 200px 200px 200px 200px ;
+    grid-template-rows: 200px 200px 200px 200px ;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    grid-gap: 8px;
+    /* padding-left: 285px; */
+}
+.table{
+    display:grid;
+    grid-template-columns: 85% 15% ;
+    justify-content: center;
+    text-align: center;
+/* 
+    margin: auto;
+    grid-gap: 8px; */
+}
+.di{
+    align-items: center;
+    background-color:#7bcf78;
+    border:  5px solid #344e41;
+    color: white;
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+}
+.grid button {
+    height: 200px;
+    width: 200px;
+}
+
+/*sets the height and width of the image*/
+img {
+    height: 190px;
+    width: 190px;
+}
+table {
+    border:thick solid #137e2e;
+    border-collapse:collapse;
+    width:12.5%;
+}
+
+th,td {
+    border:thick solid #137e2e;
+    padding: 8px;
+    width:50%;
+}
