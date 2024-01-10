@@ -18,11 +18,15 @@ function roll(){
    d1 = parseInt(Math.random() * 6)+1;
    d2 = parseInt(Math.random() * 6)+1;
    d3 = parseInt(Math.random() * 6)+1;
-   dlist.push()
-   summation = summation+d1+d2+d3;
+   // summation = summation+d1+d2+d3;
+      for (i = 0; count > i; i++){
+      dlist.push("d"+toString(i));
+      summation +=
+      }
    }
    calculateStats();
-   }
+}
+   
 
 function calclateStats(){
    
