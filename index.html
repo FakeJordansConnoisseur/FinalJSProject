@@ -7,6 +7,8 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+
     <script>
     
    
@@ -24,18 +26,17 @@
         <div class="info"><p id="i3" class="infoIn">#</p></div>
 
         <div class="grid">
-                <div class="di"><p id="d1" class="diIn">#</p></div>
-                <div class="di"><p id="d2" class="diIn">#</p></div>
-                <div class="di"><p id="d3" class="diIn">#</p></div>
+                <div class="di"><p id="i1" class="diIn">#</p></div>
+                <div class="di"><p id="i2" class="diIn">#</p></div>
+                <div class="di"><p id="i3" class="diIn">#</p></div>
                 <div class="but"><button onclick="roll()"></button></div>
                 <div class="but"><form id="count">
                     <label for="fname">Roll Count</label><br>
                     <input type="text" id="fname" name="fname"><br>
                   </form></div>
-                <div class="but"><form id="rolled">
-                    <label for="fname">Die Rolled</label><br>
-                    <input type="text" id="fname" name="fname"><br>
-                  </form></div>
+                <div class="but"><button onclick="buttonsChange(1)"></button>
+                  <button onclick="buttonsChange(2)"></button>
+                  <button onclick="buttonsChange(3)"></button></div>
         </div>
 
         <div class="sidebar2"></div>

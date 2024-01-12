@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: #588157;
+    background-color: #7bb5db;
     color: #dad7cd;
 }
 h1 {
@@ -30,13 +30,18 @@ button {
 /*Styles the grid of the game*/
 .grid{
     display:grid;
-    grid-template-columns: 200px 200px 200px 200px ;
-    grid-template-rows: 200px 200px 200px 200px ;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
     justify-content: center;
     text-align: center;
     margin: auto;
     grid-gap: 8px;
     /* padding-left: 285px; */
+}
+.sidebar1{
+    display:grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px; 
 }
 .table{
     display:grid;
