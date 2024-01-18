@@ -19,33 +19,42 @@
     <h1 class="h1">Roll Roll Roll Your Dice</h1>
 
     <div class="table">
-        <div class="sidebar1"></div>
+        <div class="sidebar1">
 
         <div class="info"><p id="i1" class="infoIn">#</p></div>
         <div class="info"><p id="i2" class="infoIn">#</p></div>
         <div class="info"><p id="i3" class="infoIn">#</p></div>
+        </div>
 
         <div class="grid">
-                <div class="di"><p id="i1" class="diIn">#</p></div>
+                <!-- <div class="di"><p id="i1" class="diIn">#</p></div>
                 <div class="di"><p id="i2" class="diIn">#</p></div>
-                <div class="di"><p id="i3" class="diIn">#</p></div>
+                <div class="di"><p id="i3" class="diIn">#</p></div> -->
                 <div class="but"><button onclick="roll()"></button></div>
                 <div class="but"><form id="count">
                     <label for="fname">Roll Count</label><br>
-                    <input type="text" id="fname" name="fname"><br>
+                    <input type="text" id="fname" name="ban"><br>
                   </form></div>
                 <div class="but"><button onclick="buttonsChange(1)"></button>
                   <button onclick="buttonsChange(2)"></button>
                   <button onclick="buttonsChange(3)"></button></div>
         </div>
 
-        <div class="sidebar2"></div>
+        <div class="sidebar2">
 
         <div class="info"><p id="i4" class="infoIn">#</p></div>
         <div class="info"><p id="i5" class="infoIn">#</p></div>
-        <div class="info"><p id="i6" class="infoIn">#</p></div>
+        <div class="info"><table id="i6" class="infoTab">
+          <tr>
+            <th>Number</th>
+            <th>Times Rolled</th>
+          </tr>
+          <tr>
+          </tr>
+        </table></div>
 
         </div>
+      </div>
 </body>
 
 

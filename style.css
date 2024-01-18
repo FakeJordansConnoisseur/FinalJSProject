@@ -19,12 +19,12 @@ h4 {
 }
 
 button {
-    background-color: #7bcf78;
+    background-color: #f80000;
     border-radius: 100px;
     display: inline-block;
     color: #02353c;
     font-size: 18px;
-    box-shadow: 5px 5px 5px #6abe67;
+    box-shadow: 5px 5px 5px #be6767;
     padding: 5px 10px;
 }
 /*Styles the grid of the game*/
@@ -39,20 +39,31 @@ button {
     /* padding-left: 285px; */
 }
 .sidebar1{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
     display:grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 200px; 
+   grid-template-columns: 100px;
+    grid-template-rows: 100px 100px 100px; 
+}
+.sidebar2{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    display:grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 100px 100px 100px; 
 }
 .table{
     display:grid;
-    grid-template-columns: 85% 15% ;
+    grid-template-columns: 16.5% 67% 16.5% ;
     justify-content: center;
     text-align: center;
 /* 
     margin: auto;
     grid-gap: 8px; */
 }
-.di{
+.infoIn{
     align-items: center;
     background-color:#7bcf78;
     border:  5px solid #344e41;

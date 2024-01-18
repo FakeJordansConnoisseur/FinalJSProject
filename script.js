@@ -16,7 +16,6 @@ triples = 0;
 function roll(){
 
 
-   count = 0;
    times = 0;
    dlist = [];
    sumlist = [];
@@ -28,9 +27,13 @@ function roll(){
    doubles = 0;
    triples = 0;
 
-   count = document.getElementById("count");
-   times = document.getElementById("times");
-   for (i = 0; times > i; i++){
+   times = parseInt(document.getElementById("fname").value);
+//    let counts = count.ban;
+
+
+//    times = document.getElementById("times").innerHTML;
+ console.log("god");
+   for (let i = 0; times > i; i++){
    d1 = parseInt(Math.random() * 6)+1;
    d2 = parseInt(Math.random() * 6)+1;
    d3 = parseInt(Math.random() * 6)+1;
@@ -42,13 +45,16 @@ function roll(){
    }
 
    // summation = summation+d1+d2+d3;
-      for (i = 0; count > i; i++){
-      dlist.push( eval("d"+toString(i)));
-      summation +=eval("d"+toString(i));
-      truesummation +=eval("d"+toString(i));
+   console.log("damn");
+      for (let k = 1; count >= k; k++){
+    console.log(k);
+      dlist.push( eval("d"+(k)));
+      summation +=eval("d"+(k));
+      truesummation +=eval("d"+(k));
       }
       sumlist.push(summation);
       summation = 0;
+      console.log("it");
    }
    calculateStats();
 }
@@ -61,6 +67,8 @@ function calculateStats(){
    document.getElementById("i3").innerHTML= mode(sumlist);
    document.getElementById("i4").innerHTML= doubles;
    document.getElementById("i5").innerHTML= triples;
+   tableUpdate();
+   console.log(count,times,dlist,sumlist,d1,d2,d3,summation,truesummation,doubles,triples);
 }
 //taken from stack overflow
 function mode(array)
@@ -84,10 +92,17 @@ function mode(array)
     }
     return maxEl;
 }
+// end taken
 function buttonsChange(am){
    count = am;
 }
-// end taken
+function tableUpdate(){
+    for (let k = 1; 6 >= k; k++){
+    let row = i6.insertRow();
+    c1 = row.insertCell();
+    c2 = row.insertCell();
+
+}
 
 // function timesChange(){
 
