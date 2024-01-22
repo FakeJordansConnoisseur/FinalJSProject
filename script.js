@@ -11,11 +11,25 @@ summation = 0;
 truesummation = 0;
 doubles = 0;
 triples = 0;
-
+br = true;
+one  = 0;
+two = 0;
+tres = 0;
+four = 0;
+five = 0;
+six = 0;
+table = document.getElementById("i6");
 
 function roll(){
 
-
+ if (br){
+    // for (let k = 1; 6 >= k; k++){
+    //     let row = i6.insertRow();
+    //     c1 = row.insertCell();
+    //     c2 = row.insertCell();
+    //     }
+        br = false;
+ }
    times = 0;
    dlist = [];
    sumlist = [];
@@ -26,6 +40,15 @@ function roll(){
    truesummation = 0;
    doubles = 0;
    triples = 0;
+   a1  = 0;
+    a2 = 0;
+    a3 = 0;
+    a4 = 0;
+    a5 = 0;
+    a6 = 0;
+
+   
+
 
    times = parseInt(document.getElementById("fname").value);
 //    let counts = count.ban;
@@ -37,7 +60,22 @@ function roll(){
    d1 = parseInt(Math.random() * 6)+1;
    d2 = parseInt(Math.random() * 6)+1;
    d3 = parseInt(Math.random() * 6)+1;
-   
+   for (let p = 1; count >= p; p++){
+        if (eval("d"+(p))== 1){
+            a1++;
+        } else if (eval("d"+(p))== 2){
+            a2++;
+        }else if (eval("d"+(p))== 3){
+            a3++;
+        }else if (eval("d"+(p))== 4){
+            a4++;
+        }else if (eval("d"+(p))== 5){
+            a5++;
+        }else if (eval("d"+(p))== 6){
+            a6++;
+        }
+   }
+
    if (d1 == d2 ==d3){
       triples++;
    } else if (d1 == d2 || d2== d3){
@@ -62,9 +100,9 @@ function roll(){
 
 function calculateStats(){
    
-   document.getElementById("i1").innerHTML= (truesummation/(count*times));
+   document.getElementById("i1").innerHTML= (truesummation/(count*times)).toFixed(2);
    document.getElementById("i2").innerHTML= (sumlist.sort(function(a, b){return a-b}))[parseInt((sumlist.length/2)-1)];
-   document.getElementById("i3").innerHTML= mode(sumlist);
+   document.getElementById("i3").innerHTML= mode(dlist);
    document.getElementById("i4").innerHTML= doubles;
    document.getElementById("i5").innerHTML= triples;
    tableUpdate();
@@ -98,10 +136,13 @@ function buttonsChange(am){
 }
 function tableUpdate(){
     for (let k = 1; 6 >= k; k++){
-    let row = i6.insertRow();
-    c1 = row.insertCell();
-    c2 = row.insertCell();
-
+        console.log(table);
+        console.log(table);
+        table.rows[k].cells[0].innerHTML = eval(k);
+        table.rows[k].cells[1].innerHTML = eval("a"+(k));
+        console.log(a1,a2);
+        
+        }
 }
 
 // function timesChange(){
